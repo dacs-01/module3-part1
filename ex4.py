@@ -10,12 +10,12 @@ count = 0
 while(count < 5):
     val = input('Enter int #' + str(count+1) + ': ')
     try:
-        integer = int(val)
-        count += 1
+        integer = int(val) # converts string into int
+        count += 1 # increment counter each successful time
     except ValueError:
         print('Please enter an integer')
-        continue
+        continue # will make user retry if failed
     else:
-        list.append(integer)
+        list.append(integer) # adds integer to list
 
-print(sum(list))
+print(sum(list)) # prints sum of list
